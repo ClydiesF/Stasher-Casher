@@ -1,0 +1,60 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: burlywood;
+    width: 300px;
+    height: 900px;
+    border: sold 2px black;
+    margin: 20px 10px;
+    border-radius: 10px;
+    & p {
+        background-image: green;
+    }
+    .profile-info {
+        background-color: whitesmoke;
+        color: grey;
+        box-shadow: 6px 10px 12px -8px rgba(19, 20, 19, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+        img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        h5,
+        p {
+            text-transform: uppercase;
+        }
+    }
+    .income-info {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 6px 10px 12px -8px rgba(19, 20, 19, 1);
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 300px;
+        background-color: whitesmoke;
+        color: grey;
+        border-radius: 10px;
+        .annual-income {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .income-breakdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid green 1px;
+        }
+    }
+}
