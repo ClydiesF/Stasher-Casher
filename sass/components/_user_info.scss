@@ -3,14 +3,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: burlywood;
     width: 300px;
     height: 900px;
     border: sold 2px black;
     margin: 20px 10px;
     border-radius: 10px;
-    & p {
-        background-image: green;
+    .profile-title {
+        background-color: green;
+        color: whitesmoke;
+        padding: 10px;
+        border-radius: 20px;
+        width: 150px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        box-shadow: 6px 10px 12px -8px rgba(19, 20, 19, 1);
+    }
+    .income-title {
+        background-color: lightcoral;
+        color: whitesmoke;
+        padding: 10px;
+        border-radius: 20px;
+        width: 150px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        box-shadow: 6px 10px 12px -8px rgba(19, 20, 19, 1);
     }
     .profile-info {
         background-color: whitesmoke;
@@ -20,10 +42,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        width: 250px;
         height: 300px;
         border-radius: 10px;
-        img {
+        .profile-img {
             height: 100px;
             width: 100px;
             border-radius: 50%;
@@ -32,6 +54,24 @@
         p {
             text-transform: uppercase;
         }
+        #edit-section {
+            display: flex;
+            margin-top: 15px;
+            justify-content: flex-end;
+            align-items: center;
+            width: 90%;
+            .fa-user-edit {
+                border-radius: 50%;
+                background-color: grey;
+                padding: 10px;
+                color: white;
+                transition: .5s;
+                &:hover {
+                    cursor: pointer;
+                    background-color: green;
+                }
+            }
+        }
     }
     .income-info {
         display: flex;
@@ -39,8 +79,8 @@
         box-shadow: 6px 10px 12px -8px rgba(19, 20, 19, 1);
         justify-content: center;
         align-items: center;
-        width: 200px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         background-color: whitesmoke;
         color: grey;
         border-radius: 10px;
@@ -49,12 +89,66 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            p {
+                font-size: 40px;
+                color: lightcoral;
+            }
+            h4 {
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
         }
         .income-breakdown {
             display: flex;
             justify-content: center;
             align-items: center;
             border: solid green 1px;
+            padding: 10px;
+            border-radius: 5px;
+            .monthly,
+            .bi-weekly,
+            .weekly {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                & h6 {
+                    color: green;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        #edit-section-income {
+            display: flex;
+            margin-top: 15px;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            .fa-binoculars {
+                border-radius: 50%;
+                background-color: grey;
+                padding: 10px;
+                color: white;
+                font-size: 20px;
+                transition: .5s;
+                &:hover {
+                    cursor: pointer;
+                    background-color: lightcoral;
+                }
+            }
+            .fa-edit {
+                border-radius: 50%;
+                background-color: grey;
+                padding: 10px;
+                color: white;
+                font-size: 20px;
+                transition: .5s;
+                &:hover {
+                    cursor: pointer;
+                    background-color: lightcoral;
+                }
+            }
         }
     }
 }

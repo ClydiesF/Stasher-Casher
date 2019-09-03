@@ -1,5 +1,5 @@
 header {
-  background-color: lightsalmon;
+  background-color: orange;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -10,10 +10,12 @@ header {
     display: flex; }
     header nav li {
       list-style: none;
+      font-size: 16px;
       color: black;
+      font-weight: 600;
       opacity: .65;
       margin-right: 5px;
-      padding: 15px 10px;
+      padding: 20px 10px;
       transition: .5s; }
       header nav li:hover {
         background-color: lightgreen; }
@@ -25,14 +27,35 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: burlywood;
   width: 300px;
   height: 900px;
   border: sold 2px black;
   margin: 20px 10px;
   border-radius: 10px; }
-  .user-info p {
-    background-image: green; }
+  .user-info .profile-title {
+    background-color: green;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+    box-shadow: 6px 10px 12px -8px #131413; }
+  .user-info .income-title {
+    background-color: lightcoral;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+    box-shadow: 6px 10px 12px -8px #131413; }
   .user-info .profile-info {
     background-color: whitesmoke;
     color: grey;
@@ -41,24 +64,39 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 250px;
     height: 300px;
     border-radius: 10px; }
-    .user-info .profile-info img {
+    .user-info .profile-info .profile-img {
       height: 100px;
       width: 100px;
       border-radius: 50%; }
     .user-info .profile-info h5,
     .user-info .profile-info p {
       text-transform: uppercase; }
+    .user-info .profile-info #edit-section {
+      display: flex;
+      margin-top: 15px;
+      justify-content: flex-end;
+      align-items: center;
+      width: 90%; }
+      .user-info .profile-info #edit-section .fa-user-edit {
+        border-radius: 50%;
+        background-color: grey;
+        padding: 10px;
+        color: white;
+        transition: .5s; }
+        .user-info .profile-info #edit-section .fa-user-edit:hover {
+          cursor: pointer;
+          background-color: green; }
   .user-info .income-info {
     display: flex;
     flex-direction: column;
     box-shadow: 6px 10px 12px -8px #131413;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: whitesmoke;
     color: grey;
     border-radius: 10px; }
@@ -67,18 +105,65 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+      .user-info .income-info .annual-income p {
+        font-size: 40px;
+        color: lightcoral; }
+      .user-info .income-info .annual-income h4 {
+        text-transform: uppercase;
+        margin-bottom: 10px; }
     .user-info .income-info .income-breakdown {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: solid green 1px; }
+      border: solid green 1px;
+      padding: 10px;
+      border-radius: 5px; }
+      .user-info .income-info .income-breakdown .monthly,
+      .user-info .income-info .income-breakdown .bi-weekly,
+      .user-info .income-info .income-breakdown .weekly {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px; }
+        .user-info .income-info .income-breakdown .monthly h6,
+        .user-info .income-info .income-breakdown .bi-weekly h6,
+        .user-info .income-info .income-breakdown .weekly h6 {
+          color: green;
+          text-transform: uppercase; }
+    .user-info .income-info #edit-section-income {
+      display: flex;
+      margin-top: 15px;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%; }
+      .user-info .income-info #edit-section-income .fa-binoculars {
+        border-radius: 50%;
+        background-color: grey;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        transition: .5s; }
+        .user-info .income-info #edit-section-income .fa-binoculars:hover {
+          cursor: pointer;
+          background-color: lightcoral; }
+      .user-info .income-info #edit-section-income .fa-edit {
+        border-radius: 50%;
+        background-color: grey;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+        transition: .5s; }
+        .user-info .income-info #edit-section-income .fa-edit:hover {
+          cursor: pointer;
+          background-color: lightcoral; }
 
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  background-color: green; }
+  background-color: white; }
 
 #main-content {
   display: flex; }
