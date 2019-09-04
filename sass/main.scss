@@ -1,5 +1,7 @@
 @import './components/header';
 @import './components/user_info';
+@import './components/modal';
+@import './components/forms';
 // styling
 * {
     margin: 0;
@@ -8,6 +10,7 @@
 
 body {
     background-color: white;
+    transition: .3s;
 }
 
 #main-content {

@@ -45,10 +45,15 @@
         width: 250px;
         height: 300px;
         border-radius: 10px;
+        padding: 20px 0px;
         .profile-img {
-            height: 100px;
-            width: 100px;
+            height: 150px;
+            width: 150px;
             border-radius: 50%;
+            border: solid 2px green;
+            margin-bottom: 25px;
+            background-image: url(https://cdn0.iconfinder.com/data/icons/handsome-man-avatars/283/stock_man_avatar-17-512.png);
+            background-size: cover;
         }
         h5,
         p {

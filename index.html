@@ -27,15 +27,36 @@
             </li>
         </nav>
     </header>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="profile-form">
+                <label for="name">name:</label>
+                <input type="text" name="name" id="name">
+                <label for="age">age:</label>
+                <input type="number" name="age" id="age">
+                <label for="job">job:</label>
+                <input type="text" name="job" id="job">
+                <button class="submit">update</button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+
     <div id="main-content">
         <section class="user-info">
             <p class="profile-title">profile info</p>
             <div class="profile-info">
-                <img src="" alt="profile-img" class="profile-img">
-                <h5>Clyde Freeman</h5>
+                <div class="profile-img">
+
+                </div>
+
+                <h5 class="user-name">Clyde Freeman</h5>
                 <p>member since 2015</p>
-                <p>30</p>
-                <p>Software Engineer</p>
+                <p class="user-age">30</p>
+                <p class="user-job">Software Engineer</p>
                 <div id="edit-section">
                     <i class="fas fa-user-edit"></i>
                 </div>
@@ -74,8 +95,7 @@
     </div>
 
     <!-- Here we load in our JS -->
-
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
